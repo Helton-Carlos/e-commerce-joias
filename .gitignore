@@ -1,0 +1,37 @@
+# Build results
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Visual Studio
+.vs/
+*.vsidx
+*.vspscc
+*.vssscc
+
+# Rider
+.idea/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# NuGet
+*.nupkg
+**/packages/*
+!**/packages/build/
+
+# MAUI specific
+*.ipa
+*.apk
+*.aab
+*.dSYM.zip
+*.dSYM
