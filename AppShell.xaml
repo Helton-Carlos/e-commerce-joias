@@ -6,5 +6,5 @@
     xmlns:pages="clr-namespace:e_commerceJoias.view"
     Shell.FlyoutBehavior="Disabled">
 
-    <ShellContent ContentTemplate="{DataTemplate pages:LoginPages}" Route="login" />
+    <ShellContent ContentTemplate="{DataTemplate pages:HomePages}" Route="home" />
 </Shell>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="e_commerceJoias.view.HomePages"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Home"
+    BackgroundColor="White">
+
+    <VerticalStackLayout
+        Padding="30"
+        Spacing="20"
+        VerticalOptions="Center">
+
+      <Image Source="main_modelo.png" 
+        WidthRequest="300" 
+        HeightRequest="200" 
+        Aspect="AspectFill"
+        HorizontalOptions="Center" />
+
+    </VerticalStackLayout>
+</ContentPage>
