@@ -3,19 +3,124 @@
     x:Class="e_commerceJoias.view.HomePages"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    Title="Home"
     BackgroundColor="White">
 
-    <VerticalStackLayout
-        Padding="30"
-        Spacing="20"
-        VerticalOptions="Center">
+    <Grid RowDefinitions="Auto,*">
 
-      <Image Source="main_modelo.png" 
-        WidthRequest="300" 
-        HeightRequest="200" 
-        Aspect="AspectFill"
-        HorizontalOptions="Center" />
+        <Grid
+            Grid.Row="0"
+            Padding="20,15"
+            BackgroundColor="White"
+            ColumnDefinitions="Auto,*,Auto">
 
-    </VerticalStackLayout>
+            <Image
+                Grid.Column="0"
+                Source="logo.png"
+                HeightRequest="40"
+                WidthRequest="120"
+                Aspect="AspectFit"
+                VerticalOptions="Center" />
+
+            <ImageButton
+                Grid.Column="2"
+                Source="menu.png"
+                BackgroundColor="Transparent"
+                HeightRequest="30"
+                WidthRequest="30"
+                HorizontalOptions="End"
+                VerticalOptions="Center" />
+        </Grid>
+
+        <ScrollView Grid.Row="1">
+            <VerticalStackLayout
+                Padding="0,0,0,0"
+                Spacing="20">
+
+                <Image
+                    Source="main_modelo.png"
+                    HeightRequest="250"
+                    Aspect="AspectFill"
+                    HorizontalOptions="Fill" /> 
+
+                <Label
+                    FontSize="16"
+                    HorizontalOptions="Center"
+                    Text="Descubra as novidades"
+                    TextColor="Gray" />
+
+
+                <ScrollView Orientation="Horizontal" HorizontalScrollBarVisibility="Never">
+                    <HorizontalStackLayout Spacing="15" Padding="15,0">
+
+                        <VerticalStackLayout Spacing="4" WidthRequest="200">
+                            <Image Source="image_0.png"
+                                   HeightRequest="200"
+                                   WidthRequest="200"
+                                   Aspect="AspectFill" />
+                            <Label Text="Brincos"
+                                   FontSize="14"
+                                   FontAttributes="Bold"
+                                   HorizontalTextAlignment="Center"
+                                   TextColor="#333333" />
+                            <Label Text="R$ 89,90"
+                                   FontSize="13"
+                                   HorizontalTextAlignment="Center"
+                                   TextColor="#888888" />
+                        </VerticalStackLayout>
+
+                        <VerticalStackLayout Spacing="4" WidthRequest="200">
+                            <Image Source="image_1.png"
+                                   HeightRequest="200"
+                                   WidthRequest="200"
+                                   Aspect="AspectFill" />
+                            <Label Text="Anéis"
+                                   FontSize="14"
+                                   FontAttributes="Bold"
+                                   HorizontalTextAlignment="Center"
+                                   TextColor="#333333" />
+                            <Label Text="R$ 129,90"
+                                   FontSize="13"
+                                   HorizontalTextAlignment="Center"
+                                   TextColor="#888888" />
+                        </VerticalStackLayout>
+
+                        <VerticalStackLayout Spacing="4" WidthRequest="200">
+                            <Image Source="image_2.png"
+                                   HeightRequest="200"
+                                   WidthRequest="200"
+                                   Aspect="AspectFill" />
+                            <Label Text="Cordões"
+                                   FontSize="14"
+                                   FontAttributes="Bold"
+                                   HorizontalTextAlignment="Center"
+                                   TextColor="#333333" />
+                            <Label Text="R$ 199,90"
+                                   FontSize="13"
+                                   HorizontalTextAlignment="Center"
+                                   TextColor="#888888" />
+                        </VerticalStackLayout>
+
+                        <VerticalStackLayout Spacing="4" WidthRequest="200">
+                            <Image Source="image_3.png"
+                                   HeightRequest="200"
+                                   WidthRequest="200"
+                                   Aspect="AspectFill" />
+                            <Label Text="Colares"
+                                   FontSize="14"
+                                   FontAttributes="Bold"
+                                   HorizontalTextAlignment="Center"
+                                   TextColor="#333333" />
+                            <Label Text="R$ 249,90"
+                                   FontSize="13"
+                                   HorizontalTextAlignment="Center"
+                                   TextColor="#888888" />
+                        </VerticalStackLayout>
+
+                    </HorizontalStackLayout>
+                </ScrollView>
+            </VerticalStackLayout>
+        </ScrollView>
+
+    </Grid>
+
 </ContentPage>
