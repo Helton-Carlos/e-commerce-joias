@@ -3,13 +3,8 @@
     x:Class="e_commerceJoias.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:e_commerceJoias"
-    Shell.FlyoutBehavior="Disabled"
-    Title="e_commerceJoias">
+    xmlns:pages="clr-namespace:e_commerceJoias.view"
+    Shell.FlyoutBehavior="Disabled">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
-
+    <ShellContent ContentTemplate="{DataTemplate pages:LoginPages}" Route="login" />
 </Shell>
